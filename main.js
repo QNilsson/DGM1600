@@ -1,9 +1,9 @@
 import {films} from '/assets/films.js'
 import {people} from '/assets/people.js'
-import {starships} from 'assets/starships.js'
-import {planets} from 'assets/planets.js'
-import {species} from 'assets/species.js'
-import {vehicles} from 'assets/vehicles.js'
+import {starships} from '/assets/starships.js'
+import {planets} from '/assets/planets.js'
+import {species} from '/assets/species.js'
+import {vehicles} from '/assets/vehicles.js'
 
 //listing some films
 let filmList = document.querySelector("#film-list");
@@ -17,7 +17,8 @@ films.forEach((film) => {
 
 //listing some people
 let peopleList = document.querySelector("#people-list");
-people.forEach((people) => {
+    
+    people.forEach((people) => {
     let listItem = document.createElement('li');
     peopleList.appendChild(listItem);
     console.log(people.title);
