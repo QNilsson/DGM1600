@@ -79,21 +79,39 @@ nav ul li a:hover {
 }
 
 .api{
+    margin: 40px 100px;
+    padding: 5px;
     display:flex;
-    border: 0px solid blue;
+    border: 2px solid blue;
     text-decoration: none;
 }
 
-.listFilms{
+/*.api-item{
     display:flex;
-}
-.listFilms ul li{
+    border: 1px solid red;
+}*/
+
+.listFilms{
+    margin: 0px 10px 10px 10px;
     display:block;
+    border: 1px solid orange;
+    height: 500px;
+}
+.listFilms li{    
+    flex-direction: column;
+    list-style-type: none;
 }
 
 .listChars{
-    display:flex;
-    border: .5px solid black;
+     margin: 0px 10px 10px 10px;
+    display:block;
+    border: 1px solid orange;
+    height: 500px;
+}
+
+.listChars li{
+    flex-direction: column;
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 500px) {
