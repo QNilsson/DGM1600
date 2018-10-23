@@ -1,6 +1,9 @@
 import {films} from '/assets/films.js'
 import {people} from '/assets/people.js'
 import {starships} from 'assets/starships.js'
+import {planets} from 'assets/planets.js'
+import {species} from 'assets/species.js'
+import {vehicles} from 'assets/vehicles.js'
 
 let filmList = document.querySelector("#film-list");
 
