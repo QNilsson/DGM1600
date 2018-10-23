@@ -17,20 +17,13 @@ films.forEach((film) => {
 
 //listing some people
 let peopleList = document.querySelector("#people-list");
+
+let limitedPeople = people.slice(0,4); //limited people is the array
     
-    people.forEach((people) => {
+    people.forEach((person) => {
     let listItem = document.createElement('li');
-    peopleList.appendChild(listItem);
-    console.log(people.title);
-}
-
-//console.log(films[2]);
-
-/*let openingCrawl = document.querySelector("#openingCrawl")
-fetch('https://swapi.co/api/films/1')
-.then(function(response){
-    return response.json();
+    listItem.textContent = person.name;
+    peopleList.appendChild(listItem);    
 })
-.then(function(myJson){
-    console.log(myJson.opening_crawl);
-});*/
+
+
