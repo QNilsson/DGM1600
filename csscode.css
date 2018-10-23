@@ -78,26 +78,22 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.show-all {
-  text-decoration: none;
-  display: block;
-  width: 200px;
-  height: 30px;
-  margin: 20px auto 90px;
-   background: #e0ebe8;
-  color: #008080;
-  font-weight: bold;
-  font-size: 1em;
-  border: 2px solid #EAC7E3;
-  border-radius: 4px;
-  cursor: pointer;
-  padding-top:10px;
+.api{
+    display:flex;
+    border: 0px solid blue;
+    text-decoration: none;
 }
 
+.listFilms{
+    display:flex;
+}
+.listFilms ul li{
+    display:block;
+}
 
-.show-all:hover {
-  background: #E4F1FE;
-  color: tan;
+.listChars{
+    display:flex;
+    border: .5px solid black;
 }
 
 @media only screen and (max-width: 500px) {
