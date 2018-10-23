@@ -79,6 +79,7 @@ nav ul li a:hover {
 }
 
 .api{
+    font-family: arial;
     margin: 40px 100px;
     padding: 5px;
     display:flex;
@@ -86,32 +87,39 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/*.api-item{
+.lists{
     display:flex;
-    border: 1px solid red;
-}*/
+}
+
 
 .listFilms{
-    margin: 0px 10px 10px 10px;
+    font-family: arial;
+    margin: 15px 20px;
     display:block;
     border: 1px solid orange;
     height: 500px;
+    width: 250px;
 }
-.listFilms li{    
+.listFilms li{   
+    margin: 0px;  
     flex-direction: column;
     list-style-type: none;
+    border: 1px solid yellow;
 }
 
 .listChars{
-     margin: 0px 10px 10px 10px;
+    font-family: arial;
+    margin: 15px 20px;
     display:block;
     border: 1px solid orange;
     height: 500px;
+    width:250px;
 }
 
 .listChars li{
     flex-direction: column;
     list-style-type: none;
+    border: 1px solid yellow;
 }
 
 @media only screen and (max-width: 500px) {
