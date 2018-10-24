@@ -1,9 +1,6 @@
-import {films} from '/assets/films.js'
-import {people} from '/assets/people.js'
-import {starships} from '/assets/starships.js'
-import {planets} from '/assets/planets.js'
-import {species} from '/assets/species.js'
-import {vehicles} from '/assets/vehicles.js'
+import {films} from 'C:\Users\quinn\DGM1600\QuinnsPortfolio\assets\films.js'
+import {people} from 'C:\Users\quinn\DGM1600\QuinnsPortfolio\assets\people.js'
+
 
 //listing some films
 let listFilms = document.querySelector(".listFilms");
