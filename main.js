@@ -1,5 +1,6 @@
-import {films} from 'C:\Users\quinn\DGM1600\QuinnsPortfolio\assets\films.js'
-import {people} from 'C:\Users\quinn\DGM1600\QuinnsPortfolio\assets\people.js'
+import { films } from './films.js'
+
+import { people } from './people.js'
 
 
 //listing some films
