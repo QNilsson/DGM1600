@@ -94,6 +94,12 @@ h2{
     text-decoration: none;
 }
 
+.api-item h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
 .lists{
     display:flex;
 }
