@@ -81,6 +81,8 @@ nav ul li a:hover {
 h2{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 10px;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 .api{
     font-family: arial;
@@ -104,6 +106,7 @@ h2{
     border: 1px solid orange;
     height: 500px;
     width: 250px;
+    list-style-type: none;
 }
 .listFilms ul li{   
     margin: 0px;  
@@ -119,6 +122,7 @@ h2{
     border: 1px solid orange;
     height: 500px;
     width:250px;
+    list-style-type: none;
 }
 
 .listChars ul li{
