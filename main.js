@@ -13,15 +13,16 @@ const republicans = senators.filter(senator => senator.party == "R")
 const democrats = senators.filter(senator => senator.party == "D")
 
 const females = senators.filter(senator => senator.gender == "F")
+console.log(`There are ${females.length} female senators`)
 
 const males = senators.filter(senator => senator.gender == "M")
+console.log(`There are ${males.length} male senators`)
 
-const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_party_pct > 0) ? senator : acc, 0)
-
-
-
+const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_party_pct > 0 ? senator : acc, 0)
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} 
 who is great and is from ${loyalRepublican.state}`)
+
+
 
 
 
@@ -42,10 +43,7 @@ films.forEach((film) => {
 
 let limitedPeople = people.slice(0,4); //limited people is the array
 let listChars = document.querySelector(".listChars");
-//let charListItem = document.createElement('li');
-
-
-    
+   
     limitedPeople.forEach((person) => {
     let listItem = document.createElement('li');
     listItem.textContent = person.name;

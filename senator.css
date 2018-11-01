@@ -1,0 +1,12 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color:lightcyan;
+}
+.flag-pic{
+    border: 1px solid bule;
+    width: 100%;
+    height:auto;
+    align-content: center;
+}
