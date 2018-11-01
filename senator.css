@@ -4,7 +4,36 @@ body {
   text-align: center;
   background-color:lightcyan;
 }
+
+nav ul {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 55px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  
+  nav ul li a {
+    color: #008080;
+    text-decoration: none;
+    text-transform:uppercase;
+  }
+  
+  nav ul li a:hover {
+    color: tan;
+  }
+
+  figure{
+      width: 220px;
+  }
+
 .flag-pic{
+    margin: 20px;
     border: 1px solid bule;
     width: 100%;
     height:auto;

@@ -22,6 +22,28 @@ const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_p
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} 
 who is great and is from ${loyalRepublican.state}`)
 
+const senWithPics = senators.map(senator => {
+    senator.figure = `https://www.govtrack.us/data/photos${senator.govtrack_id}-200px.jpeg`
+    return senator
+})
+
+console.log(senWithPics)
+let pictureDiv = document.querySelector('.container')
+
+//displaying senator pictures and captions
+senWithPics.forEach(senator => {
+
+let senatorPic = document.createElement('img')
+let senatorFig = document.createElement('figure')
+let senatorCap = document.createElement('figcaption')
+senatorPic.src = senator.imgURL
+senatorFig.appendChild(senatorPic)
+senatorFig.appendChild(senatorCap)
+pictureDiv.appendChild(senatorFig)
+
+})
+
+
 
 
 
