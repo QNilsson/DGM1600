@@ -29,7 +29,13 @@ nav ul {
   }
 
   figure{
-      width: 220px;
+      /*could use flex wrap if this starts to be lame*/
+      display: inline-block;
+  }
+
+  figcaption{
+      text-align: center;
+      font-size: 1em;
   }
 
 .flag-pic{
