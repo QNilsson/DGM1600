@@ -22,9 +22,11 @@ const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_p
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} 
 who is great and is from ${loyalRepublican.state}`)
 
+//making senator pics grid
 const senWithPics = senators.map(senator => {
-    senator.figure = `https://www.govtrack.us/data/photos${senator.govtrack_id}-200px.jpeg`
+    senator.figure = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
     return senator
+    
 })
 
 console.log(senWithPics)
