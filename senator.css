@@ -28,6 +28,12 @@ nav ul {
     color: tan;
   }
 
+  h1{
+    padding:75px;
+  }
+  h2{
+    padding:80px;
+  }
   figure{
       /*could use flex wrap if this starts to be lame*/
       display: inline-block;
