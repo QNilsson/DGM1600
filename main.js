@@ -4,6 +4,8 @@ import { people } from './assets/people.js'
 
 import { senatorData } from './assets/senators.js'
 
+import { pokemon } from './pokemon.js'
+
 
 //senator stuff
 const senators = senatorData.results[0].members
@@ -49,11 +51,9 @@ pictureDiv.appendChild(senatorFig)
 
 
 
-
-
 //star wars api stuff
 //listing some films
-let listFilms = document.querySelector(".listFilms");
+let listFilms = document.querySelector('.listFilms');
 //let filmListItem = document.createElement('li');
 
 
@@ -67,7 +67,7 @@ films.forEach((film) => {
 //listing some people
 
 let limitedPeople = people.slice(0,4); //limited people is the array
-let listChars = document.querySelector(".listChars");
+let listChars = document.querySelector('.listChars');
    
     limitedPeople.forEach((person) => {
     let listItem = document.createElement('li');
@@ -75,4 +75,38 @@ let listChars = document.querySelector(".listChars");
     listChars.appendChild(listItem);    
 })
 
+
+//pokemon stuff/////////////////////////
+
+
+console.log(pokemon)
+
+const pokeContainer = document.querySelector('#container')
+
+pokemon.forEach(poke =>{
+
+    //card.className = "this is your class in css"
+    //let card = document.createElement('div') this will create your div
+
+    //create const backFig and const frontFig
+
+    //then do a foreach loop and put the front and back together into a card
+
+    //pokeContainer.appendChild(card) will allow the cards to show
+    //do card.appendChild(frontFig(poke)) and back one as well
+
+    console.log(`${poke.id}${poke.ename}.png`)
+    let fig = document.createElement('figure')
+    let img = document.createElement('img')
+    let cap = document.createElement('figcaption')
+    cap.textContent = poke.ename
+    img.src = `img/${poke.id}${poke.ename}.png`
+    fig.appendChild(img)
+    fig.appendChild(cap)
+    pokeContainer.appendChild(fig)
+    fig.addEventListener( 'mouseover', function(){
+        fig.classList.toggle('is-flipped');
+    })
+
+})
 
