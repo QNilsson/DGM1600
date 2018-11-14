@@ -33,7 +33,7 @@ pokemon.forEach(poke =>{
     let img = document.createElement('img')
 
     //refer to the source of the image using the id and name
-    img.src = `images/${poke.id}${poke.ename}.png`
+    img.src = `pokeImages/${poke.id}${poke.ename}.png`
     //make the text content for the caption the pokemon name
     cap.textContent = poke.ename
     //use the appendChild so it will actually show up on screen
@@ -69,7 +69,15 @@ const newCard = () => {
     //front of card
     const makeCard = document.createElement('figure')
     let caption = document.createElement('figcaption')
-    Image.src = document.getElementById("pokeImage")
+    img.src = document.getElementById("pokeImage")
     console.log(pokeImage)
     console.log(pokeName)
+    cap.textContent = document.getElementById("pokeName")
+    makeCard.appendChild(caption)
+    makeCard.appendChild(img)
+    newCard.appendChild(makeCard)
+    pokeContainer.push(newCard)
+
+    //back of card
+
 }

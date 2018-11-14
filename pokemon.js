@@ -1,5 +1,4 @@
 export const pokemon = [
-[
     {
         "base": {
             "Attack": 49, 
@@ -2061,4 +2060,3 @@ export const pokemon = [
     }
 ]
 
-];
