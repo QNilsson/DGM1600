@@ -21,9 +21,10 @@ who is great and is from ${loyalRepublican.state}`)
 
 //making senator pics grid
 const senWithPics = senators.map(senator => {
-    senator.figure = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    if(senator.govtrack_id ==='412743'){
+        senator.imgURL = `https://localhost:5500/assets/cindy.jpg`}
     return senator
-    
 })
 
 console.log(senWithPics)

@@ -18,7 +18,7 @@ films.forEach((film) => {
 
 //listing some people
 
-let limitedPeople = people.slice(0,4); //limited people is the array
+let limitedPeople = people.slice(0,20); //limited people is the array
 let listChars = document.querySelector('.listChars');
    
     limitedPeople.forEach((person) => {

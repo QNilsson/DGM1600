@@ -65,3 +65,11 @@ pokemon.forEach(poke =>{
 
 
 //for the user to add his own card
+const newCard = () => {
+    //front of card
+    const makeCard = document.createElement('figure')
+    let caption = document.createElement('figcaption')
+    Image.src = document.getElementById("pokeImage")
+    console.log(pokeImage)
+    console.log(pokeName)
+}
