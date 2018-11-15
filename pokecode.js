@@ -82,8 +82,7 @@ let newCard = {
      "base":{
         "Attack": 70, 
         "Defense": 60
-
-     } 
+         } 
 }
 //when button is pushed, the new card will be created
 let create = document.querySelector('#create')
