@@ -9,12 +9,12 @@ console.log(pokemon)
 
 const pokeContainer = document.querySelector('#container')
 
+
 //create cards from the pokemon
 const makeCard = (poke) =>{
     //create a div element called card
     let card = document.createElement('div')
-    //to refer to in css
-    card.className = "card"
+      
     //add an event for when card is flipped
     card.addEventListener('click', function(){
         card.classList.toggle('is-flipped')
@@ -68,6 +68,7 @@ backFace.appendChild(capt)
 backFace.appendChild(attack)
 backFace.appendChild(defense)
 
+card.className = "card"
 //make all sides of the card visible
 card.appendChild(frontFace)
 card.appendChild(backFace)
@@ -75,7 +76,8 @@ pokeContainer.appendChild(card)
 
 }
 
-//user can make new card
+
+//user can make new card//////////////////////////////////////////////////////
 pokemon.forEach(element => makeCard(element))
 //info for new card
 let newCard = {
@@ -144,4 +146,5 @@ createCard.className = "card"
 createCard.addEventListener('click', ()=>{
     console.log("gotta catch em all!")
     pokeContainer.appendChild(newCard)
+
 })
