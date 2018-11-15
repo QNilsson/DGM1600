@@ -87,6 +87,50 @@ let newCard = {
         "Defense": 60
          } 
 }
+
+//reference newcard in css
+newCard.className = "card"
+//create figures for new card front and back
+let newFront = document.createElement('figure')
+let newBack = document.createElement('figure')
+//refer to css 
+newFront.className = "card_face card_face--front"
+console.log(`${element.id}${element.ename}.png`)
+
+//create an element for the card caption
+let captio = document.createElement('figcaption')
+//create an element for the image
+let imgg = document.createElement('img')
+
+//image will come from pokeImages folder
+imgg.src = `pokeImages/${poke.id}${poke.ename}.png`
+//caption will be the pokemons name
+captio.textContent = element.ename
+//appenchild will make caption and image visible on front of card/
+newFront.appendChild(captio)
+newBack.appendChild(imgg)
+
+//back side features
+let attack = document.createElement('p')
+let defense = document.createElement('p')
+
+//add the text content to the card
+attack.textContent = `Attack: ${element.attack}`
+defense.textContent = `Defense: ${element.defense}`
+
+//make visible background image, name of poke, and attributes
+newBack.appendChild(imag)
+newBack.appendChild(captio)
+newBack.appendChild(attack)
+newBack.appendChild(defense)
+
+//make all sides of the card visible
+newCard.appendChild(newFront)
+newCard.appendChild(newBack)
+pokeContainer.appendChild(newCard)
+
+
+
 //when button is pushed, the new card will be created
 let create = document.querySelector('#create')
 create.addEventListener('click', ()=>{

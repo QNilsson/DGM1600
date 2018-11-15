@@ -35,7 +35,8 @@ nav ul li a:hover {
 
 h1 {
     color: black;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 15px;
 }
 
 #container {
@@ -61,7 +62,7 @@ figcaption {
     background-color: rgb(14, 100, 3);
     color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -118,8 +119,8 @@ p {
 
 #create {
     width: 410px;
-    height: 80px;
-    margin-top: 30px;
+    height: 70px;
+    margin-top: 10px;
     margin-bottom: 30px;
     background-color: red;
     color: white;
