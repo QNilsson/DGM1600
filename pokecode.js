@@ -43,24 +43,29 @@ frontFace.appendChild(img)
 
 let backFace = document.createElement('figure')
 backFace.className = "card_face card_face--back"
+//add image and figure caption
 let capt = document.createElement('figcaption')
 let imag = document.createElement('img')
 
+//this is where you get the pic for the back of the card
 imag.src="pokeImages/Logo-Pokemon.png"
 capt.textContent = poke.ename
 
+//create paragraph elements for the poke attributes
 let attack = document.createElement('p')
 let defense = document.createElement('p')
 
+//add the text content to the card
 attack.textContent = `Attack: ${poke.base.Attack}`
 defense.textContent = `Defense: ${poke.base.Defense}`
 
+//make visible background image, name of poke, and attributes
 backFace.appendChild(imag)
 backFace.appendChild(capt)
 backFace.appendChild(attack)
 backFace.appendChild(defense)
 
-
+//make all sides of the card visible
 card.appendChild(frontFace)
 card.appendChild(backFace)
 pokeContainer.appendChild(card)
@@ -69,7 +74,7 @@ pokeContainer.appendChild(card)
 
 //user can make new card
 pokemon.forEach(element => makeCard(element))
-
+//info for new card
 let newCard = {
      
     "ename": "Meowth" ,
@@ -80,12 +85,14 @@ let newCard = {
 
      } 
 }
-
+//when button is pushed, the new card will be created
 let create = document.querySelector('#create')
 create.addEventListener('click', ()=>{
     return newCard(newCard)
+    pokeContainer.appendChild(newCard)
 })
 
+//create a new div for the new cards to go
 let createCard = document.createElement('div')
 createCard.className = "card"
 createCard.addEventListener('click', ()=>{
