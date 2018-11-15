@@ -10,6 +10,8 @@ body {
     background-color: lightcyan;
   }
 
+  
+
   nav ul {
     text-align: right;
     position: fixed;
@@ -39,8 +41,10 @@ body {
   }
 
 #container{
+    
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -50,15 +54,76 @@ figure{
     flex-flow: column;
     margin: 0;
     padding: 5px;
+    box-shadow: 5px 5px 5px #666;
+}
+
+img{
+  width: 100%;
 }
 
 figcaption{
-    background-color: #222;
+    background-color: rgb(14, 100, 3);
     color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
     text-align: center;
 
 }
 
+.card {
+  width: 420px;
+  height: 500px;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  margin: 35px;
 
+ 
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.card__face {
+  position: absolute;
+  backface-visibility: hidden;
+   }
+
+   .card__face--back {
+    width: 340px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+    flex-wrap: wrap;
+    align-content: space-around;
+   }
+
+   p{
+    font-size: 1rem;
+    color: rgb(230, 111, 14);
+    padding: 8px;
+    
+  
+  }
+
+  .createButton{
+    display: flex;
+    justify-content: center;
+  }
+
+  #create{
+    width: 410px;
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 30px;
+    font-size: 1.5rem;
+  }
+
+ 
