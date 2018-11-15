@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   background-color:lightcyan;
+  
 }
 
 nav ul {
@@ -29,7 +30,7 @@ nav ul {
   }
 
   h1{
-    padding:75px;
+    padding:55px;
   }
   h2{
     padding:80px;
@@ -37,17 +38,22 @@ nav ul {
   figure{
       /*could use flex wrap if this starts to be lame*/
       display: inline-block;
+      
   }
 
+  img{
+    border-radius: 10px;
+  }
   figcaption{
       text-align: center;
       font-size: 1em;
   }
 
 .flag-pic{
-    margin: 20px;
+    margin: 10px;
     border: 1px solid bule;
     width: 100%;
     height:auto;
     align-content: center;
+    position: fixed;
 }

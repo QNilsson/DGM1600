@@ -21,7 +21,9 @@ const makeCard = (poke) =>{
     })
 
 //make the front side of the card
+//let frontFace = document.createElement('figure')
 let frontFace = document.createElement('figure')
+let backFace = document.createElement('figure')
 //refer to css 
 frontFace.className = "card_face card_face--front"
 console.log(`${poke.id}${poke.ename}.png`)
@@ -35,13 +37,14 @@ let img = document.createElement('img')
 img.src = `pokeImages/${poke.id}${poke.ename}.png`
 //caption will be the pokemons name
 cap.textContent = poke.ename
-//appenchild will make caption and image visible on front of card
+//appenchild will make caption and image visible on front of card/
 frontFace.appendChild(cap)
 frontFace.appendChild(img)
 
 //back of card
 
-let backFace = document.createElement('figure')
+//let backFace = document.createElement('figure')
+//let backFace = document.createElement('div')
 backFace.className = "card_face card_face--back"
 //add image and figure caption
 let capt = document.createElement('figcaption')
@@ -88,7 +91,7 @@ let newCard = {
 let create = document.querySelector('#create')
 create.addEventListener('click', ()=>{
     return newCard(newCard)
-    pokeContainer.appendChild(newCard)
+    
 })
 
 //create a new div for the new cards to go
@@ -96,4 +99,5 @@ let createCard = document.createElement('div')
 createCard.className = "card"
 createCard.addEventListener('click', ()=>{
     console.log("gotta catch em all!")
+    pokeContainer.appendChild(newCard)
 })
