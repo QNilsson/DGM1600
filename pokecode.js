@@ -22,14 +22,20 @@ const makeCard = (poke) =>{
 
 //make the front side of the card
 let frontFace = document.createElement('figure')
+//refer to css 
 frontFace.className = "card_face card_face--front"
 console.log(`${poke.id}${poke.ename}.png`)
 
+//create an element for the card caption
 let cap = document.createElement('figcaption')
+//create an element for the image
 let img = document.createElement('img')
 
+//image will come from pokeImages folder
 img.src = `pokeImages/${poke.id}${poke.ename}.png`
+//caption will be the pokemons name
 cap.textContent = poke.ename
+//appenchild will make caption and image visible on front of card
 frontFace.appendChild(cap)
 frontFace.appendChild(img)
 

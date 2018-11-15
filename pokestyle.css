@@ -92,7 +92,7 @@ figcaption{
   backface-visibility: hidden;
    }
 
-   .card__face--back {
+.card__face--front {
     width: 340px;
     height: 450px;
     display: flex;
@@ -102,7 +102,17 @@ figcaption{
     align-content: space-around;
    }
 
-   p{
+.card__face--back {
+    width: 340px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+    flex-wrap: wrap;
+    align-content: space-around;
+   }
+
+p{
     font-size: 1rem;
     color: rgb(230, 111, 14);
     padding: 8px;
