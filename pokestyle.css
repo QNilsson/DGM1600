@@ -48,7 +48,8 @@ h1 {
 figure {
     border: thin #c0c0c0 solid;
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
     margin:0;
     padding: 5px;
     box-shadow: 5px 5px 5px #666;
@@ -56,6 +57,7 @@ figure {
 
 img {
     width: 100%;
+    justify-self: center;
 }
 
 figcaption {
@@ -64,9 +66,11 @@ figcaption {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
     text-align: center;
+    width:100%;
 }
 
-.card {
+.scene {
+    box-shadow: 5px 5px 5px #666;
     width: 320px;
     height: 360px;
     padding: 50x 0px 0px 0px;
@@ -86,7 +90,7 @@ figcaption {
     backface-visibility: hidden;
 }
 
-.card__face--front {
+.card__face {
     width: 340px;
     height: 450px;
     display: flex;
@@ -96,14 +100,19 @@ figcaption {
     align-content: space-around;
 }
 
-.card__face--back {
-    width: 340px;
-    height: 450px;
-    display: flex;
-    justify-content: space-evenly;
+.front{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back{
     transform: rotateY(180deg);
-    flex-wrap: wrap;
-    align-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 }
 
 p {
@@ -112,7 +121,7 @@ p {
     padding: 8px;
 }
 
-.createButton {
+#create-card-button {
     display: flex;
     justify-content: center;
 }
