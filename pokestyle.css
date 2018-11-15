@@ -69,7 +69,7 @@ figcaption {
     width:100%;
 }
 
-.scene {
+.card {
     box-shadow: 5px 5px 5px #666;
     width: 320px;
     height: 360px;
@@ -91,28 +91,18 @@ figcaption {
 }
 
 .card__face {
-    width: 340px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card_face--back{
+    width:340px;
     height: 450px;
     display: flex;
     justify-content: space-evenly;
     transform: rotateY(180deg);
     flex-wrap: wrap;
     align-content: space-around;
-}
-
-.front{
-    display:flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.back{
-    transform: rotateY(180deg);
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
 }
 
 p {
