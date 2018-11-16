@@ -11,14 +11,14 @@ const pokeContainer = document.querySelector('#container')
 
 
 //create cards from the pokemon
-const cardCreator = (poke) =>{
+const cardCreator = (poke =>{
 
     let card = document.createElement('div')
     card.className = "card"
     card.addEventListener('click', function() {
         card.classList.toggle('is-flipped')
     })
-}
+
 
 let frontCard = document.createElement('figure')
 frontCard.className = ("card_face card_face--front")
@@ -38,7 +38,7 @@ cardBack.className = "card_face card_face--back"
 let capt = document.createElement('figcaption')
 let imag = document.createElement('img')
 
-imag.src = "pokeImages/Logo-Pokemon.png"
+//imag.src = "pokeImages/Logo-Pokemon.png"
 capt.textContent = poke.ename
 
 let attack = document.createElement('p')
@@ -53,11 +53,34 @@ cardBack.appendChild(attack)
 cardBack.appendChild(defense)
 
 card.appendChild(frontCard)
-card.appendChild(backCard)
+card.appendChild(cardBack)
 pokeContainer.appendChild(card)
+console.log(poke.ename)
+})
 
 
+//user can create own card
+//needed info for new card
+let newCard = {
+    "ename": "Raichu",
+    "id": "026",
+    "attack": "50",
+    "defense": "45"
+}
 
+//create a clikc event to create the new card
+let create = document.querySelector('#create')
+create.addEventListener('click', () =>{
+    return cardCreator(newCard)
+})
+//give it a class name 
+let createCard = document.createElement('div')
+createCard.className = "card"
+createCard.addEventListener('click', () =>{
+    //make it visible on screen
+    pokeContainer.appendChild(newCard)
+}
+)
 
 //user can make new card//////////////////////////////////////////////////////
 //pokemon.forEach(element => cardCreator(element))

@@ -85,12 +85,9 @@ figcaption {
     transform: rotateY(180deg);
 }
 
-.card__face {
-    position: absolute;
-    backface-visibility: hidden;
-}
 
-.card__face {
+
+.card_face {
     position: absolute;
     backface-visibility: hidden;
 }
