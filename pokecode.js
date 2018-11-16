@@ -43,14 +43,17 @@ capt.textContent = poke.ename
 
 let attack = document.createElement('p')
 let defense = document.createElement('p')
+let speed = document.createElement('p')
 
 attack.textContent = `Attack: ${poke.attack}`
 defense.textContent = `Defense: ${poke.defense}`
+speed.textContent = `Speed: ${poke.speed}`
 
 cardBack.appendChild(imag)
 cardBack.appendChild(capt)
 cardBack.appendChild(attack)
 cardBack.appendChild(defense)
+cardBack.appendChild(speed)
 
 card.appendChild(frontCard)
 card.appendChild(cardBack)
@@ -65,7 +68,8 @@ let newCard = {
     "ename": "Raichu",
     "id": "026",
     "attack": "50",
-    "defense": "45"
+    "defense": "45",
+    "speed": "75"
 }
 
 //create a clikc event to create the new card

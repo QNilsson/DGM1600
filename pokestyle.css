@@ -58,6 +58,7 @@ figure {
 img {
     width: 100%;
     justify-self: center;
+    
 }
 
 figcaption {
@@ -67,34 +68,34 @@ figcaption {
     padding: 10px;
     text-align: center;
     width:100%;
+    
 }
 
 .card {
     box-shadow: 5px 5px 5px #666;
-    width: 320px;
-    height: 360px;
-    padding: 50x 0px 0px 0px;
+    width: 340px;
+    height: 400px;
+    padding: 50x 0px 75px 0px;
     transition: transform 2s;
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
-    margin: 35px;
+    margin: 18px;
 }
 
 .card.is-flipped {
     transform: rotateY(180deg);
 }
 
-
-
 .card_face {
     position: absolute;
     backface-visibility: hidden;
 }
 
+
 .card_face--back{
     width:340px;
-    height: 450px;
+    height: 400px;
     display: flex;
     justify-content: space-evenly;
     transform: rotateY(180deg);
@@ -116,7 +117,7 @@ p {
 #create {
     width: 410px;
     height: 70px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 30px;
     background-color: red;
     color: white;
