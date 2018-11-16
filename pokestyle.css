@@ -68,6 +68,7 @@ figcaption {
     padding: 10px;
     text-align: center;
     width:100%;
+   
     
 }
 
@@ -101,15 +102,17 @@ figcaption {
     transform: rotateY(180deg);
     flex-wrap: wrap;
     align-content: space-around;
+    background-color: lightgreen;
 }
 
 p {
     font-size: 1rem;
     color: rgb(230, 111, 14);
-    padding: 8px;
+    padding: 2px;
+    
 }
 
-#create-card-button {
+#createCard {
     display: flex;
     justify-content: center;
 }
