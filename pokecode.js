@@ -67,7 +67,7 @@ let newCard = {
 }
 
 
-
+//dude idk how this is gona work
 
 
 
