@@ -23,7 +23,7 @@ who is great and is from ${loyalRepublican.state}`)
 const senWithPics = senators.map(senator => {
     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
     if(senator.govtrack_id ==='412743'){
-        senator.imgURL = `https://localhost:5500/assets/cindy.jpg`}
+        senator.imgURL = `assets/cindy.jpg`}
     return senator
 })
 
