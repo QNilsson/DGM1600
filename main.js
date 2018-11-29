@@ -27,5 +27,7 @@ let listChars = document.querySelector('.listChars');
     listChars.appendChild(listItem);    
 })
 
-
+star-pic.addEventListener('click', function(){
+    star-pic.classList.toggle('is-flipped');
+});
 
