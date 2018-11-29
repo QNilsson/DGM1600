@@ -181,7 +181,7 @@ h2{
 }
 
 .header {
-  padding: 160px 0 110px;
+  padding: 140px 0 110px;
 }
 
 .contact-details {
@@ -189,7 +189,7 @@ h2{
   font-weight: bold;
   margin: 20px 35px 45px 35px;
   list-style-type: none;
-  border: 2px solid pink;
+  border: 2px solid darkgray;
   border-radius: 100%;
   width: 100px;
   height: 100px;
@@ -197,7 +197,7 @@ h2{
   background: gray;
   color: gray;
   text-decoration: none;
-  background-color: #EAC7E3
+  background-color: white
 }
 
 .contact-details:hover {
