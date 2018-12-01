@@ -6,6 +6,7 @@ import { vehicles} from './assets/vehicles.js'
 
 import { starships } from './assets/starships.js'
 
+import { planets } from './assets/planets.js'
 //star wars api stuff
 //listing some films
 let listFilms = document.querySelector('.listFilms');
@@ -50,3 +51,14 @@ limitedShips.forEach((ship)=>{
     listItem.textContent = ship.name;
     listStarships.appendChild(listItem);
 })
+
+//info about planets
+let limitedPlanets = planets.slice(0,78);
+let listPlanets = document.querySelector('.listPlanets');
+
+limitedPlanets.forEach((planet) =>{
+    let listItem = document.createElement('li');
+    listItem.textContent = planet.name;
+    listPlanets.appendChild(listItem);
+})
+

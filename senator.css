@@ -29,15 +29,11 @@ nav ul {
     color: tan;
   }
 
-  h1{
-    padding:55px;
-  }
-  h2{
-    padding:80px;
-  }
+  
   figure{
       /*could use flex wrap if this starts to be lame*/
       display: inline-block;
+      padding-top: 50px;
       
   }
 
@@ -49,11 +45,3 @@ nav ul {
       font-size: 1em;
   }
 
-.flag-pic{
-    margin: 10px;
-    border: 1px solid bule;
-    width: 100%;
-    height:auto;
-    align-content: center;
-    position: fixed;
-}
