@@ -1,10 +1,13 @@
 //senator stuff
 
+//importing
 import { senatorData } from './assets/senators.js'
 
-
+//using arrays
 const senators = senatorData.results[0].members
 
+//array manipulation to get specific info from the array
+//also displays use of arrow functions
 const republicans = senators.filter(senator => senator.party == "R")
 
 const democrats = senators.filter(senator => senator.party == "D")
@@ -22,6 +25,7 @@ who is great and is from ${loyalRepublican.state}`)
 //making senator pics grid
 const senWithPics = senators.map(senator => {
     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    //conditional statement
     if(senator.govtrack_id ==='412743'){
         senator.imgURL = `assets/cindy.jpg`}
     return senator
@@ -31,6 +35,7 @@ console.log(senWithPics)
 let pictureDiv = document.querySelector('.container')
 
 //displaying senator pictures and captions
+//looping through the array of senators who have pics and displaying them with a caption
 senWithPics.forEach(senator => {
 
 let senatorPic = document.createElement('img')

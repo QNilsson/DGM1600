@@ -1,6 +1,5 @@
 import { pokemon } from './pokemon.js'
 
-//import { newPoke } from './newPoke.js'
 
 //pokemon stuff/////////////////////////
 
@@ -55,19 +54,36 @@ pokeContainer.appendChild(card)
 
 };
 
-///////new cards
+//allow user to create a new card
+
 pokemon.forEach(element => cardCreator(element))
 
-let newCard = {
-    "ename": "Raichu",
-    "id": "026",
-    "attack": "45",
-    "defense": "23",
-    "speed": "75"    
+//make a class object containing needed info
+//this is an object constructor
+class Pokemon {
+    constructor (ename, id, base) {
+        this.ename = ename,
+        this.id = id,
+        this.base = base
+      }
 }
 
+//create a new pokemon object with the needed info
+let newPokemon = new Pokemon('Raichu', '026', {'Attack': 90, 'Defense': 55, 'HP': 60, 'Speed': 110})
 
-//dude idk how this is gona work
+//add a click event to the button
+let create = document.querySelector('#create')
+create.addEventListener('click', () => {
+return cardCreator(newPokemon)
+})
+
+//create a place in the page for a new card to go
+let createCard = document.createElement('div')
+createCard.className = "card"
+createCard.addEventListener('click', () => {
+  
+  console.log("Go GO Pokemon!")
+})
 
 
 

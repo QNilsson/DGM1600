@@ -12,7 +12,8 @@ import { planets } from './assets/planets.js'
 let listFilms = document.querySelector('.listFilms');
 //let filmListItem = document.createElement('li');
 
-
+//using arrays and looping
+//this will create a list of the star wars films
 films.forEach((film) => {
     let listItem = document.createElement('li');
     listItem.textContent = film.title;
@@ -20,9 +21,9 @@ films.forEach((film) => {
     console.log(film.title);
 })
 
-//listing some people
-
-let limitedPeople = people.slice(0,20); //limited people is the array
+//using arrays, slicing, and looping
+//this will create a list of only 20 of the many star wars characters
+let limitedPeople = people.slice(0,20); 
 let listChars = document.querySelector('.listChars');
    
     limitedPeople.forEach((person) => {
@@ -31,7 +32,8 @@ let listChars = document.querySelector('.listChars');
     listChars.appendChild(listItem);    
 })
 
-//listing some vehicles
+//using arrays, slicing and looping
+//this will create a list of only 25 of the many star wars vehicles
 let limitedVehs = vehicles.slice(0,25);
 let listVehicles = document.querySelector('.listVehicles');
 
@@ -61,4 +63,20 @@ limitedPlanets.forEach((planet) =>{
     listItem.textContent = planet.name;
     listPlanets.appendChild(listItem);
 })
+
+//listing charactres with blonde hair
+//using the filter method to filter through an array
+const blondes = people.filter(person => person.hair_color == "blond")
+
+let listBlondes = document.querySelector('.listBlondes');
+console.log(blondes)
+
+blondes.forEach((blonde)=>{
+    let listItem = document.createElement('li');
+    listItem.textContent = blonde.name;
+    listBlondes.appendChild(listItem);
+})
+
+
+
 

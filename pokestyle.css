@@ -91,6 +91,7 @@ figcaption {
 .card_face {
     position: absolute;
     backface-visibility: hidden;
+    background-color:orange;
 }
 
 
