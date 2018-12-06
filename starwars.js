@@ -7,6 +7,9 @@ import { vehicles} from './assets/vehicles.js'
 import { starships } from './assets/starships.js'
 
 import { planets } from './assets/planets.js'
+
+import { species } from './assets/species.js';
+
 //star wars api stuff
 //listing some films
 let listFilms = document.querySelector('.listFilms');
@@ -45,6 +48,7 @@ limitedVehs.forEach((veh) =>{
 })
 
 //listing some starships
+//using let
 let limitedShips = starships.slice(0,21);
 let listStarships = document.querySelector('.listStarShips');
 
@@ -66,6 +70,7 @@ limitedPlanets.forEach((planet) =>{
 
 //listing charactres with blonde hair
 //using the filter method to filter through an array
+//using const
 const blondes = people.filter(person => person.hair_color == "blond")
 
 let listBlondes = document.querySelector('.listBlondes');
@@ -75,6 +80,16 @@ blondes.forEach((blonde)=>{
     let listItem = document.createElement('li');
     listItem.textContent = blonde.name;
     listBlondes.appendChild(listItem);
+})
+
+//listing some species
+const gastros = species.filter(species => species.classification == "mammal")
+
+let listGastos = document.querySelector('.listGastros');
+gastros.forEach((gastro)=>{
+    let listItem = document.createElement('li');
+    listItem.textContent = gastro.name;
+    listGastos.appendChild(listItem);
 })
 
 

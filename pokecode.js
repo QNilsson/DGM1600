@@ -34,6 +34,7 @@ card.addEventListener('click', function(){
 });
 
 //add the text from the pokemon data
+//putting the info on the card using string template literals
 baseAtk.textContent = `${poke.ename} has an attack of (${poke.base["Attack"]})`
 baseDef.textContent = `${poke.ename} has a defense of (${poke.base["Defense"]})`
 baseSpeed.textContent = `${poke.ename} has a speed of (${poke.base["Speed"]})`
@@ -62,12 +63,13 @@ pokemon.forEach(element => cardCreator(element))
 //this is an object constructor
 class Pokemon {
     constructor (ename, id, base) {
+        //accessing properties using dot notation
         this.ename = ename,
         this.id = id,
         this.base = base
       }
 }
-
+//maybe use id to loop through next pokemon
 //create a new pokemon object with the needed info
 let newPokemon = new Pokemon('Raichu', '026', {'Attack': 90, 'Defense': 55, 'HP': 60, 'Speed': 110})
 
