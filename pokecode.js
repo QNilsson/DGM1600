@@ -82,10 +82,8 @@ return cardCreator(newPokemon)
 //create a place in the page for a new card to go
 let createCard = document.createElement('div')
 createCard.className = "card"
-createCard.addEventListener('click', () => {
-  
-  console.log("Go GO Pokemon!")
-})
+
+
 
 
 

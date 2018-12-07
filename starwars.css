@@ -71,7 +71,7 @@ nav ul li a:hover {
     border-radius: 5%;
 }
 
-.listBlondes, .listGastros{
+.listBlondes, .listMammals{
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 20px;
     display:block;
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 }
 
-.listFilms li, .listChars li, .listVehicles li, .listStarShips li, .listPlanets li, .listBlondes li, .listGastros li {
+.listFilms li, .listChars li, .listVehicles li, .listStarShips li, .listPlanets li, .listBlondes li, .listMammals li {
     margin: 0px;
     padding: 5px;
     flex-direction: column;
@@ -103,6 +103,24 @@ nav ul li a:hover {
     text-align: center;
     align-content: center;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .listCrawls{
+      border: 3px solid orange;
+  }
 
 
 

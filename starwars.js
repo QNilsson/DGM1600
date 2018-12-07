@@ -21,7 +21,7 @@ films.forEach((film) => {
     let listItem = document.createElement('li');
     listItem.textContent = film.title;
     listFilms.appendChild(listItem);
-    console.log(film.title);
+    
 })
 
 //using arrays, slicing, and looping
@@ -83,15 +83,38 @@ blondes.forEach((blonde)=>{
 })
 
 //listing some species
-const gastros = species.filter(species => species.classification == "mammal")
+const mammals = species.filter(species => species.classification == "mammal")
 
-let listGastos = document.querySelector('.listGastros');
-gastros.forEach((gastro)=>{
+let listMammals = document.querySelector('.listMammals');
+mammals.forEach((mammal)=>{
     let listItem = document.createElement('li');
-    listItem.textContent = gastro.name;
-    listGastos.appendChild(listItem);
+    listItem.textContent = mammal.name;
+    listMammals.appendChild(listItem);
 })
 
+//listing the film crawls
+let firstCrawl = films[0].opening_crawl
+//let listCrawls = firstCrawl.slice(0,1);
+let listCrawls = document.querySelector('.listCrawls');
+//let filmListItem = document.createElement('li');
+
+//using arrays and looping
+//this will create a list of the star wars films
+
+    let listItem = document.createElement('p');
+    listItem.textContent = film.opening_crawl;
+    firstCrawl.appendChild(listItem);
+
+
+//info about planets
+/*let limitedPlanets = planets.slice(0,78);
+let listPlanets = document.querySelector('.listPlanets');
+
+limitedPlanets.forEach((planet) =>{
+    let listItem = document.createElement('li');
+    listItem.textContent = planet.name;
+    listPlanets.appendChild(listItem);
+})*/
 
 
 
