@@ -56,7 +56,6 @@ pokeContainer.appendChild(card)
 };
 
 //allow user to create a new card
-
 pokemon.forEach(element => cardCreator(element))
 
 //make a class object containing needed info

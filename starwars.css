@@ -46,22 +46,26 @@ nav ul li a:hover {
 }
 
 .api-item {
-    padding-top: 120px;
-    
+    padding-top: 0px;
 }
 
-.api-item2{
-    padding-top:15px;
+.api-item2 {
+    padding-top: 5px;
 }
 
 .lists {
     display: flex;
-    
 }
 
-.listFilms, .listChars, .listVehicles, .listStarShips, .listPlanets  {
+.listFilms,
+.listChars,
+.listVehicles,
+.listStarShips,
+.listPlanets,
+.listBlondes,
+.listMammals {
     font-family: arial;
-    margin: 15px 20px;
+    margin: 5px 20px;
     display: block;
     border: 1px solid darkgray;
     height: 500px;
@@ -71,20 +75,13 @@ nav ul li a:hover {
     border-radius: 5%;
 }
 
-.listBlondes, .listMammals{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px 20px;
-    display:block;
-    border: 1px solid darkgray;
-    height:500px;
-    width: 250px;
-    list-style-type: none;
-    overflow: scroll;
-    border-radius: 5%;
-
-}
-
-.listFilms li, .listChars li, .listVehicles li, .listStarShips li, .listPlanets li, .listBlondes li, .listMammals li {
+.listFilms li,
+.listChars li,
+.listVehicles li,
+.listStarShips li,
+.listPlanets li,
+.listBlondes li,
+.listMammals li {
     margin: 0px;
     padding: 5px;
     flex-direction: column;
@@ -98,31 +95,46 @@ nav ul li a:hover {
     text-overflow: ellipsis;
 }
 
-.info-section{
-    display:flex;
+.info-section {
+    display: flex;
     text-align: center;
     align-content: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
 
-  .listCrawls{
-      border: 3px solid orange;
+  
+  #film-crawl  {
+    border: solid 3px #81d8d0;
+    width: 30rem;
+    background: black;
+    padding:5px;
+    margin-bottom: 10px;
+    margin-left: 500px;
   }
-
-
+  #title{
+      margin-left: 500px;
+  }
+  
+  
+  #starwarsPhoto{
+      margin: -50px;
+  }
+  .card-body{
+    display:flex;
+   justify-content: flex-start;  
+   align-content: center;
+  }
+  
+  .card-body ul{
+    padding-left: 0;
+  }
+  
+  .card-body li{
+    list-style-type: none;
+    padding-bottom: .5rem;
+   
+  }
+  
 
 @media only screen and (max-width: 500px) {
     nav ul {
