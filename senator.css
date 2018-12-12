@@ -5,6 +5,9 @@ body {
   background-color:lightcyan;
   
 }
+h1{
+  padding-top:60px;
+}
 
 nav ul {
     text-align: right;

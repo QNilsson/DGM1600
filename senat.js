@@ -12,7 +12,7 @@ const republicans = senators.filter(senator => senator.party == "R")
 
 const democrats = senators.filter(senator => senator.party == "D")
 
-const females = senators.filter(senator => senator.gender == "F")
+/*const females = senators.filter(senator => senator.gender == "F")
 console.log(`There are ${females.length} female senators`)
 
 const males = senators.filter(senator => senator.gender == "M")
@@ -20,18 +20,14 @@ console.log(`There are ${males.length} male senators`)
 
 const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_party_pct > 0 ? senator : acc, 0)
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} 
-who is great and is from ${loyalRepublican.state}`)
+who is great and is from ${loyalRepublican.state}`)*/
 
 //making senator pics grid
-const senWithPics = senators.map(senator => {
-    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
-    //conditional statement
-    if(senator.govtrack_id ==='412743'){
-        senator.imgURL = `assets/cindy.jpg`}
+const senWithPics = democrats.map(senator => {
+    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`    
     return senator
 })
 
-console.log(senWithPics)
 let pictureDiv = document.querySelector('.container')
 
 //displaying senator pictures and captions
@@ -47,4 +43,26 @@ senatorFig.appendChild(senatorPic)
 senatorFig.appendChild(senatorCap)
 pictureDiv.appendChild(senatorFig)
 
+})
+
+//repeat of previous code, just using republicans now
+const senPics = republicans.map(senator =>{
+    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
+    //conditional statement
+    if(senator.id === 'H001079'){
+        senator.imgURL = `assets/cindy.jpeg`    }
+        return senator
+})
+
+let picDiv = document.querySelector('.container2')
+
+senPics.forEach(senator =>{
+    let senatorPic2 = document.createElement('img')
+    let senatorFig2 = document.createElement('figure')
+    let senatorCap2 = document.createElement('figcaption')
+    senatorCap2.textContent = `${senator.first_name} ${senator.last_name}`
+    senatorPic2.src = senator.imgURL
+    senatorFig2.appendChild(senatorPic2)
+    senatorFig2.appendChild(senatorCap2)
+    picDiv.appendChild(senatorFig2)
 })
