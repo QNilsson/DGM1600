@@ -64,8 +64,7 @@ nav ul li a:hover {
 .listPlanets,
 .listBlondes,
 .listMammals,
-.listDroids,
-.listPlaces {
+.listDroids {
     font-family: arial;
     margin: 5px 20px;
     display: block;
@@ -84,8 +83,7 @@ nav ul li a:hover {
 .listPlanets li,
 .listBlondes li,
 .listMammals li,
-.listDroids li,
-.listPlaces li {
+.listDroids li {
     margin: 0px;
     padding: 5px;
     flex-direction: column;
@@ -121,7 +119,8 @@ nav ul li a:hover {
   
   
   #starwarsPhoto{
-      margin: -50px;
+      padding-top:50px;
+      margin: -70px;
   }
   .card-body{
     display:flex;

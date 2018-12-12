@@ -13,6 +13,7 @@ import { species } from './assets/species.js';
 //star wars api stuff
 //listing some films
 let listFilms = document.querySelector('.listFilms');
+
 //let filmListItem = document.createElement('li');
 
 //using arrays and looping
@@ -106,16 +107,5 @@ droids.forEach((droid)=>{
     listItem.textContent = droid.name;
     listDroids.appendChild(listItem);
 })
-
-//ideal places to live
-const places = planets.filter(planet => planet.climate == "temperate")
-let listPlaces = document.querySelector('.listPlaces')
-places.forEach((place)=>{
-    let listItem = document.querySelector('li')
-    listItem.textContent = place.name;
-    listPlaces.appendChild(listItem)
-})
-
-
 
 
