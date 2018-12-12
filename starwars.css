@@ -63,7 +63,8 @@ nav ul li a:hover {
 .listStarShips,
 .listPlanets,
 .listBlondes,
-.listMammals {
+.listMammals,
+.listDroids {
     font-family: arial;
     margin: 5px 20px;
     display: block;
@@ -81,7 +82,8 @@ nav ul li a:hover {
 .listStarShips li,
 .listPlanets li,
 .listBlondes li,
-.listMammals li {
+.listMammals li,
+.listDroids li {
     margin: 0px;
     padding: 5px;
     flex-direction: column;

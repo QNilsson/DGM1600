@@ -98,5 +98,15 @@ let listItem = document.createElement('li')
 listItem.textContent = films[0].opening_crawl
 openingCrawl.appendChild(listItem)
 
+//number of droids
+const droids = people.filter(person => person.gender == "n/a")
+let listDroids = document.querySelector('.listDroids')
+droids.forEach((droid)=>{
+    let listItem = document.createElement('li');
+    listItem.textContent = droid.name;
+    listDroids.appendChild(listItem);
+})
+
+
 
 
