@@ -107,6 +107,15 @@ droids.forEach((droid)=>{
     listDroids.appendChild(listItem);
 })
 
+//ideal places to live
+const places = planets.filter(planet => planet.climate == "temperate")
+let listPlaces = document.querySelector('.listPlaces')
+places.forEach((place)=>{
+    let listItem = document.querySelector('li')
+    listItem.textContent = place.name;
+    listPlaces.appendChild(listItem)
+})
+
 
 
 

@@ -64,7 +64,8 @@ nav ul li a:hover {
 .listPlanets,
 .listBlondes,
 .listMammals,
-.listDroids {
+.listDroids,
+.listPlaces {
     font-family: arial;
     margin: 5px 20px;
     display: block;
@@ -83,7 +84,8 @@ nav ul li a:hover {
 .listPlanets li,
 .listBlondes li,
 .listMammals li,
-.listDroids li {
+.listDroids li,
+.listPlaces li {
     margin: 0px;
     padding: 5px;
     flex-direction: column;
