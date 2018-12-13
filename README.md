@@ -14,12 +14,6 @@ Proper use of string manipulation
 
 Good use of arrays
 
-//making a grid of pictures of the democrates using map
-const senWithPics = democrats.map(senator => {
-    senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`    
-    return senator
-})
-
 Use of custom JavaScript objects
 
 DEMONSTRATES USE OF ES6 INCLUDING
