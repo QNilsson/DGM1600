@@ -4,8 +4,6 @@ import { pokemon } from './pokemon.js'
 //pokemon stuff/////////////////////////
 
 
-console.log(pokemon)
-
 const pokeContainer = document.querySelector('#container')
 
 const cardCreator = (poke) =>{
