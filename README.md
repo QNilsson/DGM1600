@@ -3,12 +3,12 @@ Using HTML CSS and Javascript
 
 Here are the requirements
 
-*Provides examples of Basic JavaScript code including:
-  *Proper use of variables with proper scope
-  *Good use of conditional logic and value comparison
-  *Proper use of String manipulation
-  *Good use of Arrays
-  *Use of custom JavaScript objects
+Provides examples of Basic JavaScript code including:
+  Proper use of variables with proper scope
+  Good use of conditional logic and value comparison
+  Proper use of String manipulation
+  Good use of Arrays
+  Use of custom JavaScript objects
 
 *Demonstrates use of ES6 including:
 -Proper use of let and const variables 
