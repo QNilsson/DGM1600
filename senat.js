@@ -12,17 +12,12 @@ const republicans = senators.filter(senator => senator.party == "R")
 
 const democrats = senators.filter(senator => senator.party == "D")
 
-/*const females = senators.filter(senator => senator.gender == "F")
-console.log(`There are ${females.length} female senators`)
-
-const males = senators.filter(senator => senator.gender == "M")
-console.log(`There are ${males.length} male senators`)
 
 const loyalRepublican = republicans.reduce((acc, senator)=> senator.votes_with_party_pct > 0 ? senator : acc, 0)
 console.log(`The most loyal republican is ${loyalRepublican.first_name} ${loyalRepublican.last_name} 
-who is great and is from ${loyalRepublican.state}`)*/
+who is great and is from ${loyalRepublican.state}`)
 
-//making senator pics grid
+//making a grid of pictures of the democrates using map
 const senWithPics = democrats.map(senator => {
     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`    
     return senator
@@ -50,7 +45,7 @@ const senPics = republicans.map(senator =>{
     senator.imgURL = `https://www.govtrack.us/data/photos/${senator.govtrack_id}-200px.jpeg`
     //conditional statement
     if(senator.id === 'H001079'){
-        senator.imgURL = `assets/cindy.jpeg`    }
+        senator.imgURL = `assets/cindy.jpg`    }
         return senator
 })
 

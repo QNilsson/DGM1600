@@ -59,7 +59,7 @@ limitedShips.forEach((ship) => {
     listStarships.appendChild(listItem);
 })
 
-//info about planets
+//Listing 78 planets using slice
 let limitedPlanets = planets.slice(0, 78);
 let listPlanets = document.querySelector('.listPlanets');
 
@@ -83,7 +83,7 @@ blondes.forEach((blonde) => {
     listBlondes.appendChild(listItem);
 })
 
-//listing some species
+//listing the mammals
 const mammals = species.filter(species => species.classification == "mammal")
 
 let listMammals = document.querySelector('.listMammals');
@@ -93,9 +93,10 @@ mammals.forEach((mammal) => {
     listMammals.appendChild(listItem);
 })
 
-//listing the film crawls
+//listing episode iv film crawl
 let openingCrawl = document.querySelector('#film-crawl')
 let listItem = document.createElement('li')
+//access the first film in the array
 listItem.textContent = films[0].opening_crawl
 openingCrawl.appendChild(listItem)
 

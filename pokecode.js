@@ -68,8 +68,8 @@ class Pokemon {
         this.base = base
       }
 }
-//maybe use id to loop through next pokemon
 //create a new pokemon object with the needed info
+//key value pairs
 let newPokemon = new Pokemon('Raichu', '026', {'Attack': 90, 'Defense': 55, 'HP': 60, 'Speed': 110})
 
 //add a click event to the button
