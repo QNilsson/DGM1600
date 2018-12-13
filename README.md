@@ -1,8 +1,6 @@
 My Final DGM1600 Project
 Using HTML CSS and Javascript
 
-<<<<<<< HEAD
-=======
 Here are the requirements
 
 
@@ -43,4 +41,3 @@ DEMONSTRATES USE OF OBJECT ORIENTED PROGRAMMING TECHNIQUES INCLUDING
 Objects with properties and methods accessed using dot notaion
 
 Objects using constructors properly
->>>>>>> master
