@@ -1,0 +1,27 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+h3{
+    padding-top:185px;
+}
+.divider-10 {
+    width:100%; 
+    min-height:1px; 
+    margin-top:60px; 
+    margin-bottom:60px;  
+    display:inline-block; 
+    position:relative;
+}
+.page-footer {
+    background-color: navy;
+    color: white;
+}

@@ -1,0 +1,30 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+.col-3{
+    margin-left: 100px;
+    text-align: center;
+    font-weight: 100;
+}
+.display-4{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.form-row{
+    margin-top:20px;
+}
+.form-group{
+    margin-top:10px;
+
+}
+.back-2-home{
+    padding:15px;
+}

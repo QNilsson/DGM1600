@@ -1,0 +1,118 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.box {
+    background: red;
+}
+
+.box2 {
+    background: gray;
+}
+
+nav {
+    float: right;
+    color: #FF0000;
+    font-family: Helvetica, sans-serif;
+}
+
+nav ul li ul.sub-nav {
+    display: none;
+}
+
+.display-4 {
+    padding: 150px 0px 0px 0px;
+    text-align: left;
+}
+
+.subtitle {
+    display: block;
+}
+
+#left-text-block {
+    padding: 24px;
+    padding-top: 100px;
+}
+
+#mid-text-block {
+    padding: 24px;
+    padding-top: 100px;
+}
+
+#right-text-block {
+    padding: 24px;
+    padding-top: 100px;
+}
+
+#background {
+    background-color: lightgray;
+}
+
+#info {
+    padding: 100px 150px 20px 150px;
+    align-content: center;
+}
+
+.btn {
+    margin: 50px 0px 50px 0px;
+    align-content: left;
+    cursor: pointer;
+}
+
+#kitty {
+    cursor: pointer;
+    
+}
+
+#catPic{
+    border: 2px solid pink;
+}
+
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 15px;
+}
+
+
+#centerPar {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 100;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.col-4 {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: navy;
+    color: white;
+}

@@ -1,0 +1,92 @@
+<!--this will be for login form-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="img/favicon.png" type="img/png" rel="icon"> -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav navbar-expand-lg">
+        <a href="index.html" class="back-2-home">Back to Home</a>
+    </nav>
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <h1 class="display-4">Contact Us</h1>
+            </div>
+            <!--end col-->
+            <div class="col-3"></div>
+        </div>
+        <!--end row-->
+
+        <form id="contact-form" name="myForm" class="needsValidation">
+            <div class="form-row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" requried>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-4"></div>
+                <div class="col-4" id="name-form">
+                    <label for="exampleInputPassword1">Name</label>
+                    <input type="name" class="form-control" id="exampleName" required>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-custom-lg rounded-0" id="submit-me">Submit</button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <label for="exampleFormControlTextarea1">Add a Note!</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+    </div>
+
+
+    </form>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</body>
+
+</html>
