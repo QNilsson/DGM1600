@@ -2,13 +2,13 @@ html,
 body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background-color: lightcyan;
+    background-color: #ff7e57;
 }
 
 * {
     margin: 0;
     padding: 0;
-    background-color: lightcyan;
+    background-color: #FF7E57;
 }
 
 .intro {
@@ -108,7 +108,7 @@ h2 {
 
 .lists {
     display: flex;
-    
+
 }
 
 .listFilms {
